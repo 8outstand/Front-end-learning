@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 可以选一个或者多个 实现差异化选择 */
+    .pink{
+      color: pink;
+    }
+    div{
+      color: red;
+    }
+    .sub-nav{
+      font-size: 20px;
+    }
+    /* 类选择器的优先级高于类型选择器（标签选择器） */
+  </style>
+</head>
+<body>
+  <div class="pink">大春</div>
+  <div>夏洛</div>
+  <div>秋雅</div>
+  <!-- 类选择器可以选择多个类名 -->
+  <div class="pink sub-nav">冬梅</div>
+</body>
+</html>

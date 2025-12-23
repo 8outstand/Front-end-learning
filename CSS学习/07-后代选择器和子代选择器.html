@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 后代选择器 */
+    .footer a{
+      color: red;
+      text-decoration: none;
+    }
+    .nav ul li{
+      color: pink;
+      font-size: 20px;
+    }
+    /* div span{
+      color: aquamarine;
+    } */
+     /* 子代选择器只选择亲儿子 */
+     div > span{
+      color: aquamarine;
+     }
+  </style>
+</head>
+<body>
+  <ul class="nav">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">产品介绍</a></li>
+    <li><a href="#">合作模式</a></li>
+  </ul>
+  <div class="footer">
+    <a href="#">关于我们</a>
+    <a href="#">联系我们</a>
+    <a href="#">隐私政策</a>
+  </div>
+  <!-- 子代选择器 -->
+   <div>
+    <span>我是儿子</span>
+    <p>
+      <span>我是孙子</span>
+    </p>
+   </div>
+</body>
+</html>
