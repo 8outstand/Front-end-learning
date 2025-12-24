@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS权重优先级</title>
+  <style>
+    * {
+      color: #783a3a !important;
+    }
+    div {
+      color: #3a783a ;
+    }
+    .font {
+      color: #783a3a;
+    }
+    #font {
+      color: #3a783a;
+    }
+    p {
+      color: #b48888;
+    }
+    span {
+      color: #3a783a;
+    }
+    header {
+      color: #3a783a;
+    }
+    h1 {
+      color: #3a783a;
+    }
+  </style>
+</head>
+<body>
+  <div class="font" id="font" style="color: red;">CSS权重优先级</div>
+  <p><span>继承的权重为 0</span></p>
+
+  <header>
+    <h1>CSS权重优先级</h1>
+  </header>
+</body>
+</html>

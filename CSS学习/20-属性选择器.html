@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+    /* a[class="font"] {
+      color: red;
+    } */
+     /* a[class^="font"] {
+      color: red;
+     } */
+     /* a[class$="14"] {
+      color: pink;
+     } */
+      /* a[class*="16"] {
+        color: red;
+      } */
+       a[class] {
+        color: red;
+       }
+       input[type="text"],
+       input[type="password"] {
+        /* 去掉轮廓线 */
+        outline: none;
+       }
+  </style>
+</head>
+<body>
+  <a href="#">修改文字颜色</a> <br>
+  <a href="#" class="font">修改文字颜色</a> <br>
+  <a href="#" class="font14">修改文字颜色</a> <br>
+  <a href="#" class="font16">修改文字颜色</a> <br>
+  <a href="#" class="red">修改文字颜色</a> <br>
+
+  <input type="text">
+  <input type="password">
+  <input type="checkbox">
+  <input type="radio">
+</body>
+</html>

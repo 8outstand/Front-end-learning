@@ -21,11 +21,31 @@
       margin: 0 auto;
       padding: 20px;/* 内容与边框之间的间距 */
     }
-    .content img{
+    /* .content img{
     width: 100%;
     }
     .content video{
       width: 100%;
+    } */
+     /* 分组选择器，并集选择器 */
+     .content img,
+     .content video{
+      width: 100%;
+    }
+    .content>p{
+      text-indent: 2em;
+      line-height: 27px;
+      text-align: justify;
+    }
+    .shi {
+      text-align: center;
+      line-height: 27px;
+    }
+    .shi h5{
+      font-size: 20px;
+    }
+    body {
+      font:14px / 1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
     }
   </style>
 </head>

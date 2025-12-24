@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .box1,
+    .box2 {
+      width: 150px;
+      height: 100px;
+      background-color: pink;
+    }
+    .box1 {
+      margin-bottom: 100px;
+    }
+    .box2 {
+      background-color: skyblue;
+      margin-top: 150px;
+    }
+    .father {
+      width: 150px;
+      height: 150px;
+      background-color: pink;
+      margin: 0 auto;
+      /* 1. 给父亲添加上边框 */
+      /* border: 1px solid #000; */
+      padding-top: 20px;
+      /* 2. 父级有上padding */
+      /* padding-top: 1px; */
+    }
+    .son {
+      width: 80px;
+      height: 80px;
+      background-color: purple;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+
+  <div class="father">
+    <div class="son"></div>
+  </div>
+</body>
+</html>

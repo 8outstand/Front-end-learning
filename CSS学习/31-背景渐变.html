@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      background: linear-gradient(45deg, pink, purple);
+    }
+    .gradient-btn{
+      background: linear-gradient(45deg, pink, purple);
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .text{
+      font-size: 30px;
+      font-weight: 700;
+      /* 渐变背景文字 */
+      background-image: linear-gradient(97deg, #0096FF, #BB64FF 42%, #F2416B 74%, #EB7500);
+      /* -webkit- 前缀  谷歌浏览器老版本的兼容性写法 */
+      -webkit-background-clip: text;
+      /* 背景裁剪 以文字的形式裁剪 */
+      background-clip: text;
+      /* 文本填充颜色 为透明 */
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+  <div class="text">我是渐变文字</div>
+  <button class="gradient-btn">搜索</button>
+</body>
+</html>
