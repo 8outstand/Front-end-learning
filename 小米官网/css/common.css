@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  padding-top: 60px;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.header .logo {
+  height: 30px;
+  margin: 15px 40px;
+}
+
+.header .logo img {
+  height: 100%;
+  width: auto;
+}
+
+.header nav ul{
+  display: flex;
+  gap: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.header nav ul li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.header nav ul li a:hover {
+  color: #d8621e;
+}
+
+.header .login {
+  display: flex;
+  gap: 20px;
+  line-height: 60px;
+  margin-right: 40px;
+}
+.header .login a {
+  color: #fff;
+  font-size: 14px;
+}
+.header .login span {
+  color: #fff;
+  font-size: 14px;
+}
+.header .login a:hover {
+  color: #d8621e;
+}
+
+.xmi17u, .xmi17, .xmiyu, .xmipad8, .xmistar {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.xmi17u img, .xmi17 img, .xmiyu img, .xmipad8 img, .xmistar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.xmi17u {
+  height: 620px;
+}
+
+.xmi17 {
+  height: 620px;
+}
+
+.xmiyu {
+  height: 620px;
+}
+
+.xmipad8 {
+  height: 620px;
+}
+
+.xmistar {
+  height: 620px;
+}
+
+
+
+.footer {
+  width: 70%;
+  /* height: 320px; */
+  /* background-color: #f5f5f5; */
+  margin: 0 auto;
+  min-height: 320px;
+}
+.footer .service {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 0;
+}
+
+.footer .service-left {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.footer .service-right {
+  text-align: center;
+  margin-left: 40px;
+  padding-left: 40px;
+  border-left: 1px solid #eee;
+  flex-shrink: 0;
+  min-width: 200px;
+}
+.footer .service-right button {
+  width: 120px;
+  height: 40px;
+  background-color: #FFF;
+  color: #ff6700;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #ff6700;
+  margin-top: 4px;
+}
+.footer .service-right button:hover {
+  background-color: #ff6700;
+  color: #FFF;
+}
+
+.footer .service-right p:first-child {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ff6700;
+  margin-bottom: 10px;
+}
+
+.footer .service-right p:nth-child(2),
+.footer .service-right p:nth-child(5) {
+  font-size: 12px;
+  color: #999;
+}
+.footer .service-right p:nth-child(4) {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ff6700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer .service-right p:nth-child(6),
+.footer .service-right p:nth-child(7),
+.footer .service-right p:nth-child(8) {
+  font-size: 13px;
+  color: #777575;
+}
+.footer .service-left .column {
+  flex: 1;
+}
+.footer .service-left .column li a:hover {
+  color: #d8621e;
+}
+.footer .service-left h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.footer .service-left ul li {
+  margin-bottom: 8px;
+}
+.footer .service-left ul li a {
+  font-size: 12px;
+  color: #666;
+}
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 相对定位是按照窗口的相对位置进行定位，但是虽然移动了，但是还占着原来的位置 */
+    .father{
+      width: 500px;
+      height: 500px;
+      background-color: pink;
+      position: relative;
+    }
+    .son1{
+      width: 200px;
+      height: 200px;
+      background-color: yellow;
+      position: relative;
+      top: 100px;
+      left: 100px;
+    }
+    .son2{
+      width: 200px;
+      height: 200px;
+      background-color: aquamarine;
+      position: relative;
+      top: 200px;
+      left: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="father">
+    <div class="son1"></div>
+    <div class="son2"></div>
+
+  </div>
+</body>
+</html>
