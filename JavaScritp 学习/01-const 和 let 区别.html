@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // const 定义的变量不能重新赋值
+    const a = 10;
+    // a = 20; // 报错
+
+    // let 定义的变量可以重新赋值
+    let b = 10;
+    b = 20; // 不报错
+
+    //因为栈里保存的是地址，所以a1.push('d')不会报错
+    //实际的数据在堆内存中
+    const a1 = ['a', 'b', 'c'];
+    a1.push('d');
+    console.log(a1); // ['a', 'b', 'c', 'd']
+  </script>
+</body>
+</html>

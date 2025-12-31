@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <img src="./images/1.webp" alt="">
+  <script>
+    //获取 m，n 之间的随机整数
+    function getRandomInt(m, n) {
+      return Math.floor(Math.random() * (n - m + 1)) + m;
+    }
+    //获取元素的图片
+    const img = document.querySelector('img');
+    //随机得到序号
+    const randomNum = getRandomInt(1, 5);
+    //修改元素的对象属性 对象.属性 = 值
+    img.src = `./images/${randomNum}.webp`;
+  </script>
+</body>
+</html>

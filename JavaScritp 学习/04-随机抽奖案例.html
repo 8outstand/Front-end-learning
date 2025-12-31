@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrapper {
+      width: 840px;
+      height: 420px;
+      background: url(./images/bg01.jpg) no-repeat center / cover;
+      padding: 100px 250px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <strong>传智教育年会抽奖</strong>
+    <h1>一等奖：<span id="one">???</span></h1>
+    <h3>二等奖：<span id="two">???</span></h3>
+    <h5>三等奖：<span id="three">???</span></h5>
+  </div>
+  <script>
+    const personArr = ['周杰伦', '刘德华', '周星驰', 'Pink老师', '张学友']
+    // 一等奖
+    const one = personArr[Math.floor(Math.random() * personArr.length)];
+    document.getElementById('one').innerText = one;
+    // 从数组中删除一等奖的人
+    personArr.splice(personArr.indexOf(one), 1);
+    // 二等奖
+    const two = personArr[Math.floor(Math.random() * personArr.length)];
+    document.getElementById('two').innerText = two;
+    // 从数组中删除二等奖的人
+    personArr.splice(personArr.indexOf(two), 1);
+    // 三等奖
+    const three = personArr[Math.floor(Math.random() * personArr.length)];
+    document.getElementById('three').innerText = three;
+    // 从数组中删除三等奖的人
+    personArr.splice(personArr.indexOf(three), 1);
+  </script>
+</body>
+</html>

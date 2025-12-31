@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      color: #333;
+    }
+
+    .active {
+      color: red;
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <div class="box active">
+    我是一个div
+  </div>
+  <script>
+    const box = document.querySelector('.box');
+    //修改样式
+    //2.1 追加类名
+    // box.classList.add('active');
+    //2.2 删除类名
+    // box.classList.remove('active');
+    //2.3 切换类名 如果有就删除 如果没有就追加
+    box.classList.toggle('active');
+    
+  </script>
+</body>
+</html>
