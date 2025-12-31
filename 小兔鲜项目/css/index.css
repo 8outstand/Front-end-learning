@@ -197,11 +197,38 @@
   height: 610px;
   /* background-color: #735d5d; */
 }
+
 .body .body-r ul li{
+  overflow: hidden;
+  position: relative;
   width: 242px;
   height: 305px;
   /* background-color: #9b1b1b; */
   padding: 10px 21px 0;
+  border: 2px solid transparent;
+
+}
+.body .body-r li .mask{
+  position: absolute;
+  left: 0;
+  bottom: -83px;
+  width: 100%;
+  height: 83px;
+  background-color: #5EB69C;
+  transition: all .2s;
+  
+}
+.body .body-r li:hover .mask{
+  transform: translateY(-83px);
+}
+.body .body-r li:hover .mask p{
+  font-size: 16px;
+  text-align: center;
+  line-height: 83px;
+  color: #fff;
+}
+.body .body-r ul li:hover{
+  border: 2px solid #5EB69C;
 }
 .body .body-r ul li img{
   width: 200px;
