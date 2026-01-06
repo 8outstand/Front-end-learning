@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="checkbox" name="" id="">
+  <button>点击</button>
+  <script>
+    //1. 获取
+    const ipt = document.querySelector('input');
+    ipt.checked = true;
+    // ipt.checked = 'true'  // 会选中，不提倡  有隐式转换
+
+    const btn = document.querySelector('button');
+    btn.disabled = true;
+  </script>
+</body>
+</html>

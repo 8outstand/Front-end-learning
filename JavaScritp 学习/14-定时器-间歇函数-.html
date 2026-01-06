@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function fn() {
+      console.log('hi')
+    }
+    let n = setInterval(fn, 1000);
+    clearInterval(n);
+
+    let i = 1
+    setInterval(function() {
+      console.log(i++)
+      document.write(`${i}<br>`)
+    }, 5);
+  </script>
+</body>
+</html>
