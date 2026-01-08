@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" name="" id="">
+  <script>
+    //1.键盘事件
+    const input = document.querySelector('input')
+
+    //1.1 键盘按下事件
+    // input.addEventListener('keydown',function() {
+    //   console.log('键盘按下事件');
+    // })
+    //1.2 键盘抬起事件
+    // input.addEventListener('keyup',function() {
+    //   console.log('键盘抬起事件');
+    // })
+
+    input.addEventListener('input',function() {
+      console.log(input.value);
+    })
+  </script>
+</body>
+</html>
