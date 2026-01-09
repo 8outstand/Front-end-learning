@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 存储复杂数据类型
+    // 1. 先将复杂数据类型转换为字符串
+    // 2. 再将字符串存储到本地存储中
+    // 3. 从本地存储中获取字符串
+    // 4. 将字符串转换为复杂数据类型
+    const obj = {
+      name: '张三',
+      age: 18,
+      sex: '男'
+    }
+    // 1. 先将复杂数据类型转换为字符串
+    const str = JSON.stringify(obj);
+    console.log(str);
+    // 2. 再将字符串存储到本地存储中
+    localStorage.setItem('obj', str);
+    // 3. 从本地存储中获取字符串
+    const str2 = localStorage.getItem('obj');
+    console.log(str2);
+    // 4. 将字符串转换为复杂数据类型
+    const obj2 = JSON.parse(str2);
+    console.log(obj2);
+    //取出obj2的name属性
+    console.log(obj2.name);
+  </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 存储数据
+    // 语法：localStorage.setItem('key', 'value');
+    localStorage.setItem('username', '张三');
+    // 语法：localStorage.getItem('key');
+    const username = localStorage.getItem('username');
+    console.log(username);
+    // 语法：localStorage.removeItem('key');
+    localStorage.removeItem('username');
+  </script>
+</body>
+</html>

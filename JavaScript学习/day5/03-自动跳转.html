@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <a href="https://www.baidu.com">自动跳转,将在3秒后跳转</a>
+  <script>
+    //获取元素
+    const a = document.querySelector('a');
+    // 延迟 3 秒跳转
+    let count = 3;
+    const timer = setInterval(function(){
+      count--;
+      a.innerHTML = `自动跳转,将在${count}秒后跳转`;
+      if(count <= 0){
+        clearInterval(timer);
+        location.href = 'https://www.baidu.com';
+      }
+    }, 1000)
+  </script>
+</body>
+</html>

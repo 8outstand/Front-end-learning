@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+  </ul>
+  <script>
+    // //创建节点
+    // const div = document.childElementCount('div')
+    // console.log(div);
+    // // 追加节点
+    // document.body.appendChild(div);
+    const ul = document.querySelector('ul');
+    const li = document.createElement('li');
+    li.innerHTML = '6';
+    // ul.appendChild(li);
+    ul.insertBefore(li, ul.children[0]);
+  </script>
+</body>
+</html>
