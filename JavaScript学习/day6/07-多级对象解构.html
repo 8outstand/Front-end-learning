@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const person = [
+      {
+        name: '佩奇',
+        family: {
+          mother: '猪妈妈',
+          father: '猪爸爸',
+          sister: '乔治'
+        },
+        age: 6
+      }
+    ]
+    const [{name, family: {mother, father, sister}, age}] = person
+    console.log(name, mother, father, sister, age)
+  </script>
+</body>
+</html>

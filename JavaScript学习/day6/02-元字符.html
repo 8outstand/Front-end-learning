@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    console.log(/哈/.test('你好哈')); // true
+    console.log(/哈/.test('你好')); // false
+    console.log(/^哈/.exec('你好哈')); // false
+    console.log(/^哈/.exec('哈你好')); // true
+    console.log(/^哈$/.exec('哈')); // true
+    console.log(/^哈$/.exec('你好哈')); // false
+    console.log(/^哈哈*$/.exec('哈好哈')); // true
+    //+ 匹配大于等于一个字符
+    console.log(/^哈哈+$/.exec('哈好哈')); // false
+    console.log(/^哈哈+$/.exec('哈哈好哈')); // true
+
+    //量词{n} 匹配n个字符
+    console.log(/^哈哈{2}$/.exec('哈哈')); // true
+    console.log(/^哈哈{2}$/.exec('哈哈好哈')); // false
+    //量词{n,m} 匹配n到m个字符
+    console.log(/^哈哈{2,3}$/.exec('哈哈')); // true
+    console.log(/^哈哈{2,3}$/.exec('哈哈好哈')); // false
+    console.log(/^哈哈{2,3}$/.exec('哈哈哈哈')); // true  
+    //量词{n,} 匹配n个以上字符
+    console.log(/^哈哈{2,}$/.exec('哈哈')); // true
+    console.log(/^哈哈{2,}$/.exec('哈哈好哈')); // false
+    console.log(/^哈哈{2,}$/.exec('哈哈哈哈')); // true
+    
+    
+    
+    
+    
+  </script>
+</body>
+</html>

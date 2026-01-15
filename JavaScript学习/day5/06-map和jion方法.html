@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // map方法
+    // 1. 定义一个数组
+    const arr = ['red', 'blue', 'green'];
+    // 2. 调用map方法
+    const newArr = arr.map(function(ele,index) {
+      return ele + "颜色";
+    });
+    // 3. 打印新数组
+    console.log(newArr);
+
+    //数组join 方法
+
+    // 1. 定义一个数组
+    const arr2 = ['red', 'blue', 'green'];
+    // 2. 调用join方法
+    const str2 = arr2.join('');
+    const str = arr2.join(',');
+    const str1 = arr2.join('｜');
+    // 3. 打印字符串
+    console.log(str);
+    console.log(str1);
+    console.log(str2);
+  </script>
+</body>
+</html>
