@@ -13,5 +13,4 @@ function NewPage({ onGoBack }) {
 
 
 
-
 export default NewPage;
