@@ -1,0 +1,259 @@
+/* 首页样式 */
+.entry{
+  height: 500px;
+  background-color: #F5F5F5;
+}
+.entry .w{
+  height: 100%;
+  position: relative;
+}
+.entry .category{
+  width: 250px;
+  height: 100%;
+  background:rgba(0, 0, 0, .42);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+.category ul{
+  background:rgba(0, 0, 0, .42);
+}
+.category ul li{
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  color: #fff;
+  /* background-color: aqua; */
+  padding: 0 12px 0 29px;
+}
+.category ul li:hover{
+  background-color: #5EB69C;
+}
+.category ul li p a{
+  font-size: 14px;
+  color: #fff;
+}
+.category ul li p a:hover{
+  color: orange;
+}
+.category ul li p a:first-child{
+  font-size: 16px;
+  margin-right: 14px;
+}
+.banner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.banner ul {
+  width: 100%;
+  height: 100%;
+}
+.banner ul li {
+  width: 100%;
+  height: 100%;
+}
+.banner ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner .circle{
+  position: absolute;
+  display: flex;
+  bottom: 20px;
+  right: 20px;
+  gap: 10px;
+  z-index: 2;
+  width: auto;
+  height: auto;
+}
+.banner .circle li {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transition: all .2s;
+}
+.banner .circle li:hover{
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
+  background-color: #fff;
+}
+.box-hd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 112px;
+}
+.box-hd h2{
+  font-size: 30px;
+  color: #333333;
+}
+.box-hd h2 small{
+  color: #A1A1A1 ;
+  font-size: 16px;
+  margin-left: 35px;
+}
+.box-hd a{
+  font-size: 16px;
+  color: #A1A1A1;
+}
+.box-bd ul{
+  display: flex;
+  justify-content: space-between;
+}
+.box-bd ul li{
+  width: 304px;
+  height: 404px;
+  background-color: #EEF9F4;
+}
+.box-bd ul li a{
+  text-align: center;
+}
+.box-bd ul li img{
+  width: 304px;
+  height: 304px;
+}
+.box-bd ul li .title{
+  height: 31px;
+  font-size: 20px;
+  color: #333333;
+  margin-top: 17.5px;
+  margin-bottom: 8.5px;
+  /* 单行文本溢出换行 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.box-bd ul li .price{
+  font-size: 22px;
+  color: #AA2113;
+}
+.box-bd ul li .price small{
+  font-size: 18px;
+  margin-right: 4px;
+}
+
+.hot .box-bd ul li{
+  width: 304px;
+  height: 404px;
+  background-color: #fff;
+}
+.hot .box-bd ul li a p{
+  font-size: 16px;
+  color: #A1A1A1;
+}
+.costume .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 102px;
+}
+.costume .head .head-right{
+  display: flex;
+  justify-content: space-between;
+}
+.costume .head .head-right ul{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 20px;
+}
+.costume .head .head-right .more{
+  color: #A1A1A1 ;
+  margin-left: 65px;
+}
+.costume .head .head-right .more i{
+  margin-left: 12.4px;
+}
+.costume .head-right ul li a:hover{
+  text-align: center;
+  background-color: #5EB69C;
+  color: #FFF;
+  border-radius: 5px;
+}
+.costume .head-right ul li a{
+  padding: 3px 8px;
+}
+.body{
+  display: flex;
+  justify-content: space-between;
+}
+.body .body-l{
+  width: 248px;
+  height: 610px;
+  background-color: #EEF9F4;
+}
+.body .body-r{
+  width: 968px;
+  height: 610px;
+  /* background-color: #735d5d; */
+}
+
+.body .body-r ul li{
+  overflow: hidden;
+  position: relative;
+  width: 242px;
+  height: 305px;
+  /* background-color: #9b1b1b; */
+  padding: 10px 21px 0;
+  border: 2px solid transparent;
+
+}
+.body .body-r li .mask{
+  position: absolute;
+  left: 0;
+  bottom: -83px;
+  width: 100%;
+  height: 83px;
+  background-color: #5EB69C;
+  transition: all .2s;
+  
+}
+.body .body-r li:hover .mask{
+  transform: translateY(-83px);
+}
+.body .body-r li:hover .mask p{
+  font-size: 16px;
+  text-align: center;
+  line-height: 83px;
+  color: #fff;
+}
+.body .body-r ul li:hover{
+  border: 2px solid #5EB69C;
+}
+.body .body-r ul li img{
+  width: 200px;
+  height: 180px;
+  margin-bottom: 10px;
+}
+.body .body-r ul li a{
+  line-height: 19px;
+}
+.body .body-r ul .price{
+  margin-top: 12px;
+  font-size: 22px;
+  color: #AF2F22;
+}
+.body .body-r ul .price small{
+  font-size: 16px;
+  margin-right: 5px;
+}
+.body .body-r ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* 单行文本溢出省略 */
+.ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
