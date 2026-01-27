@@ -1,0 +1,144 @@
+/* 商品详情页样式 */
+
+.product-detail {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.product-detail h1 {
+  margin-bottom: 2rem;
+}
+
+.product-detail-content {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product-image-container {
+  flex: 1;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h2 {
+  margin-bottom: 1rem;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  color: #ff4757;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.product-actions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.add-to-cart-btn {
+  padding: 0.8rem 2rem;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #5a6fe1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+.buy-now-btn {
+  padding: 0.8rem 2rem;
+  background-color: #764ba2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buy-now-btn:hover {
+  background-color: #6a419a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(118, 75, 162, 0.3);
+}
+
+.loading-state {
+  padding: 2rem;
+  text-align: center;
+}
+
+.error-state {
+  padding: 2rem;
+  text-align: center;
+}
+
+.error-state h1 {
+  color: #ff4757;
+  margin-bottom: 1rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .product-detail {
+    padding: 1.5rem;
+  }
+
+  .product-detail-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .product-image {
+    max-width: 100%;
+  }
+
+  .product-actions {
+    justify-content: center;
+  }
+
+  .add-to-cart-btn,
+  .buy-now-btn {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-detail {
+    padding: 1rem;
+  }
+
+  .product-actions {
+    flex-direction: column;
+  }
+
+  .add-to-cart-btn,
+  .buy-now-btn {
+    width: 100%;
+  }
+}

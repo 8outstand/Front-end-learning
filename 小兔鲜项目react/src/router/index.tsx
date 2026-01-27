@@ -1,12 +1,15 @@
-import { lazy } from 'react';
+import { lazy, Suspense } from 'react';
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import AuthGuard from '../components/AuthGuard';
+import Loading from '../components/Loading';
 
 /**
  * 路由配置
  */
 const Home = lazy(() => import('../pages/Home'));
 const Login = lazy(() => import('../pages/Login'));
+const ProductList = lazy(() => import('../pages/ProductList'));
+const ProductDetail = lazy(() => import('../pages/ProductDetail'));
 
 /**
  * 公共路由配置
@@ -15,6 +18,22 @@ export const publicRoutes = [
   {
     path: '/login',
     element: <Login />
+  },
+  {
+    path: '/products',
+    element: (
+      <Suspense fallback={<Loading />}>
+        <ProductList />
+      </Suspense>
+    )
+  },
+  {
+    path: '/product/:id',
+    element: (
+      <Suspense fallback={<Loading />}>
+        <ProductDetail />
+      </Suspense>
+    )
   }
 ];
 
@@ -26,7 +45,9 @@ export const protectedRoutes = [
     path: '/',
     element: (
       <AuthGuard>
-        <Home />
+        <Suspense fallback={<Loading />}>
+          <Home />
+        </Suspense>
       </AuthGuard>
     )
   }
