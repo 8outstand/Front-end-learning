@@ -1,0 +1,22 @@
+// 1. 声明一个 react 状态 - useState
+
+import { useState } from "react"
+
+//2.绑定核心流程
+//1.通过 value属性绑定 react 状态
+//2. 绑定 onChange 时间 通过时间参数 e 拿到输入框的最新值，反向绑定到表单
+
+function App() {
+  const [value, setValue] = useState('') 
+  return (
+    <div>
+      <input 
+      value={value}
+      onChange={e => setValue(e.target.value)}
+      type="text"
+      />
+    </div>
+  )
+}
+
+export default App
