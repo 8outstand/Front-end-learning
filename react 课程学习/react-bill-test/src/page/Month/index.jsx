@@ -58,7 +58,9 @@ const Month = () => {
 
   //按照日来分组
   const dayGroup = useMemo(() => {
-    const groupDate = _.groupBy(currentMonthList, (item) => dayjs(item.date).format("YYYY-MM-DD"));
+    const groupDate = _.groupBy(currentMonthList, (item) =>
+      dayjs(item.date).format("YYYY-MM-DD"),
+    );
     const dayList = Object.keys(groupDate);
     return {
       groupDate,
@@ -110,11 +112,13 @@ const Month = () => {
         </div>
         {/* 单日列表显示 */}
         <DailyBill />
-        {
-          dayGroup.dayList.map((item) => (
-            <DailyBill key={item} date={item} billList={dayGroup.groupDate[item]} />
-          ))
-        }
+        {dayGroup.dayList.map((item) => (
+          <DailyBill
+            key={item}
+            date={item}
+            billList={dayGroup.groupDate[item]}
+          />
+        ))}
       </div>
     </div>
   );
